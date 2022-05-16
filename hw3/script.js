@@ -72,15 +72,16 @@
     const minAge = 18;
     const maxAge = 60;
     const visitorAge = Number(prompt('Сколько Вам лет?'));
-    const ageConfirmed = confirm(`Вам действительно ${visitorAge} лет?`);
-
-    if (ageConfirmed){
-        alert('Информация сохранена.');
     
-    } if (visitorAge < MIN_AGE || visitorAge > MAX_AGE){
+
+    if (visitorAge < MIN_AGE || visitorAge > MAX_AGE){
         console.log('Ваш возраст слишком мал или велик для посещения.');
     } else if (visitorAge < minAge ||visitorAge >= maxAge){
         console.log('Вход разрешен с разрешения взрослых!');
+
+        const isConfirmed = confirm(`У Вас есть разрешение взрослых от 18 до 60 лет?`);
+        console.log('Вход разрешен!');
+
     } else {
         console.log('Вход разрешен!');
     };
