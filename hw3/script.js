@@ -1,32 +1,32 @@
-// //task 1
+//task 1
 
-// let firstNumber;
-// let secondNumber;
+let firstNumber;
+let secondNumber;
 
-// firstNumber = Number(prompt('Введите Первое число: '));
-// alert('Вы ввели число: ' +firstNumber);
-// console.log('firstNumber', firstNumber);
-
-
-// secondNumber = Number(prompt('Введите Второе число: '));
-// alert('Вы ввели число: ' +secondNumber);
-// console.log('secondNumber', secondNumber);
-
-// alert('Вы ввели числа: ' + firstNumber + ' и ' + secondNumber);
+firstNumber = Number(prompt('Введите Первое число: '));
+alert('Вы ввели число: ' +firstNumber);
+console.log('firstNumber', firstNumber);
 
 
-// if (firstNumber > secondNumber){
-//     alert('Первое число больше второго');
-//     console.log('Первое число больше второго');
-// }
-// if (firstNumber < secondNumber){
-//     alert('Второе число больше первого');
-//     console.log('Второе число больше первого');
-// }
-// if(firstNumber === secondNumber){
-//     alert('Числа равны');
-//     console.log('Числа равны');
-// };
+secondNumber = Number(prompt('Введите Второе число: '));
+alert('Вы ввели число: ' +secondNumber);
+console.log('secondNumber', secondNumber);
+
+alert('Вы ввели числа: ' + firstNumber + ' и ' + secondNumber);
+
+
+if (firstNumber > secondNumber){
+    alert('Первое число больше второго');
+    console.log('Первое число больше второго');
+}
+if (firstNumber < secondNumber){
+    alert('Второе число больше первого');
+    console.log('Второе число больше первого');
+}
+if(firstNumber === secondNumber){
+    alert('Числа равны');
+    console.log('Числа равны');
+};
 
 //task 2
 
@@ -66,18 +66,18 @@ switch (operator) {
 }
 
  
-// //task 3
+//task 3
 
-//     const MIN_AGE = 12;
-//     const MAX_AGE = 80;
-//     const minAge = 18;
-//     const maxAge = 60;
-//     const visitorAge = Number(prompt('Сколько Вам лет?'));
+    const MIN_AGE = 12;
+    const MAX_AGE = 80;
+    const minAge = 18;
+    const maxAge = 60;
+    const visitorAge = Number(prompt('Сколько Вам лет?'));
 
-//     if (visitorAge < MIN_AGE || visitorAge > MAX_AGE){
-//         console.log('Ваш возраст слишком мал или велик для посещения.');
-//     } else if (visitorAge <= minAge ||visitorAge >= maxAge){
-//         console.log('Вход разрешен с разрешения взрослых!');
-//     } else {
-//         console.log('Вход разрешен!');
-//     }
+    if (visitorAge < MIN_AGE || visitorAge > MAX_AGE){
+        console.log('Ваш возраст слишком мал или велик для посещения.');
+    } else if (visitorAge <= minAge ||visitorAge >= maxAge){
+        console.log('Вход разрешен с разрешения взрослых!');
+    } else {
+        console.log('Вход разрешен!');
+    };
