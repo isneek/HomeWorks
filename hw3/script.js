@@ -79,7 +79,7 @@
     } else if (visitorAge < minAge ||visitorAge >= maxAge){
         console.log('Вход разрешен с разрешения взрослых!');
 
-        const isConfirmed = confirm(`У Вас есть разрешение взрослых от 18 до 60 лет?`);
+    const isConfirmed = confirm(`У Вас есть разрешение взрослых от 18 до 60 лет?`);
         console.log('Вход разрешен!');
 
     } else {
