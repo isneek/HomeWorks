@@ -47,15 +47,16 @@ const authorize = () => {
 
     // task2
 
-let n = 20;
-
-for (let i = 2; i <= n; i++) {
- for (let j = 2; j <= i; j++) {
-    if ((i % j == 0) && (j != i)){
-      break;
-    }else{
-      console.log(i);
-      break;
+    let m = 10;
+    let n = 50;
+    
+    for (let i = m; i <= n; i++) {
+     for (let j = 2; j <= i; j++) {
+        if ((i % j == 0) && (j != i)){
+          break;
+        }else{
+          console.log(i);
+          break;
+        }
+      }
     }
-  }
-}
