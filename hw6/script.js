@@ -62,23 +62,23 @@ const registration = () => {
 
 // // task2/1
 
-// function randomInteger(min, max) {
-//     const rand = min + Math.random() * (max + 1 - min);
-//     return Math.floor(rand);
-//   }
+function randomInteger(min, max) {
+    const rand = min + Math.random() * (max + 1 - min);
+    return Math.floor(rand);
+  }
   
-//     // alert( randomInteger(10, 20) ); 
-//     const integRandom = randomInteger(10, 20);
+    // alert( randomInteger(10, 20) ); 
+    const integRandom = randomInteger(10, 20);
 
-//     console.log(`integRandom`, integRandom);
+    console.log(`integRandom`, integRandom);
 
 
     
 // // // task2/2
 
-// const getRandomInteger = (min, max) => {
-//     return Math.floor(min + Math.random() * (max +1 - min));
-//   };
-//   const integerRandom = getRandomInteger(5, 10);
+const getRandomInteger = (min, max) => {
+    return Math.floor(min + Math.random() * (max +1 - min));
+  };
+  const integerRandom = getRandomInteger(5, 10);
 
-//   console.log(`integerRandom`, integerRandom); 
+  console.log(`integerRandom`, integerRandom); 
