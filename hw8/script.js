@@ -10,6 +10,7 @@ const getCountTrue = (value) => {
     }
     return count.length;
 };
+
 const countTrue = getCountTrue([true, true, false, false, false]);
 
 const countTrue1 = getCountTrue([false, false, false, false]);
@@ -21,19 +22,40 @@ console.log('countTrue1', countTrue1)
 console.log('countTrue2', countTrue2)
 
 
-// task2
+// task2/1
 
-const getOccurrencesCount = (arr) =>{
+const getOccurrencesCount = (items) => {
+
 let result = {};
-for(let i = 0; i < arr.length; i++) {
-    if(!result[arr[i]]){
-    result[arr[i]] = 0;
+
+for(let i = 0; i < items.length; i++) {
+    if(!result[items[i]]){
+    result[items[i]] = 0;
     }
-    ++result[arr[i]];
+    ++result[items[i]];
     }
     console.log('result', result)
+};
+
+// task2/2
+
+
+// const getOccurrencesCount = (items) => {
+
+//     let occurrencesCount = {};
+
+//     for (let elem of items){
     
-}
+//         if(!occurrencesCount[elem]){
+//             occurrencesCount[elem] = 1
+//         }else{
+//             occurrencesCount[elem] += 1
+//         }
+
+//         console.log(occurrencesCount)
+//     }
+//     return occurrencesCount
+// };
 
 getOccurrencesCount(["a", "v", "a", "b", "b",]);
 
@@ -57,8 +79,8 @@ const getFindExcess = (arr) =>{
     let oddNumber = [];
         
     for(let num of arr) {
+        
         if (num % 2 === 0){
-
             evenNumber.push(num);
         } else {
             oddNumber.push(num);
